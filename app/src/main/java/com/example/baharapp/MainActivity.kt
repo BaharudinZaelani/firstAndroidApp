@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,18 +27,34 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.hallo_world)
 
         initComponents()
-        tvsayHallo.text = resources.getString(R.string.say_hello, " Bahar Disini")
         textResult.text = resources.getString(R.string.app_name)
 
+        // Event listener
         submitButton.setOnClickListener {
             val tmpName = kata.text.toString()
             if ( tmpName.trim().isEmpty() ) textResult.text = resources.getString(R.string.error_text_null) else {
                 textResult.text = tmpName
             }
+
+            // Other Resources
+            Log.i("ValueResource", resources.getInteger(R.integer.maxPage).toString())
+            Log.i("ValueResource", resources.getBoolean(R.bool.isProductionMode).toString())
+            Log.i("ValueResource", resources.getColor(R.color.background, theme).toString())
+            resources.getIntArray(R.array.numbers).forEach {
+                Log.i("ValueResource", it.toString())
+            }
+
+            submitButton.setBackgroundColor(resources.getColor(R.color.background, theme))
+
+
         }
 
+        // String Resource
+        tvsayHallo.text = resources.getString(R.string.say_hello, " Bahar Disini")
+
+        // Array String Resource
         resources.getStringArray(R.array.names).forEach{
-            Log.i("PZN", it)
+            Log.i("", it)
         }
     }
 }
