@@ -20,6 +20,7 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_ok"/>
+        android:text="@string/button_ok"
+        android:textColor="@color/say_hallo"/>
 
 </merge>
