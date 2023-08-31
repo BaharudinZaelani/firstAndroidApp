@@ -6,6 +6,19 @@
     android:background="#fff"
     android:padding="20dp">
 
+    <!-- Welcome card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        android:padding="22dp"
+        android:background="#eee">
+
+        <include layout="@layout/welcome_card"/>
+
+    </LinearLayout>
+
     <!-- Form Layout -->
     <LinearLayout
         android:layout_width="match_parent"

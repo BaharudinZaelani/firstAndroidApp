@@ -4,6 +4,8 @@
     <string name="hintText">Ketikan Sesuatu!</string>
     <string name="error_text_null">Kata tidak boleh kosong</string>
     <string name="say_hello">Hallo %1$s</string>
+    <string name="welcome_text">Selamat datang.</string>
+    <string name="description_app">Aplikasi pertama saya diandroid!</string>
     <string-array name="names">
         <item>Baharudin</item>
         <item>Zaelani</item>
