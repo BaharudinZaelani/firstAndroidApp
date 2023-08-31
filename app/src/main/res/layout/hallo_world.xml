@@ -6,6 +6,7 @@
     android:background="#fff"
     android:padding="20dp">
 
+    <!-- Form Layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,24 +14,7 @@
         android:padding="22dp"
         android:background="#eee">
 
-        <EditText
-            android:textColorHint="@color/hintColor"
-            android:autofillHints="username"
-            android:hint="@string/hintText"
-            android:id="@+id/editText"
-            android:inputType="text"
-            android:layout_gravity="center"
-            android:paddingVertical="12sp"
-            android:layout_width="300dp"
-            android:maxWidth="488dp"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/submit"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/button_ok"/>
+        <include layout="@layout/say_hallo_form"/>
 
     </LinearLayout>
 
@@ -43,16 +27,7 @@
         android:padding="32dp"
         android:background="#eee">
 
-        <TextView
-            android:id="@+id/tvsayHallo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/say_hello"/>
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <include layout="@layout/result_say_hallo"/>
 
     </LinearLayout>
 

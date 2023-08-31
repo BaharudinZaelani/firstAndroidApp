@@ -6,7 +6,6 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,13 +39,9 @@ class MainActivity : AppCompatActivity() {
             Log.i("ValueResource", resources.getInteger(R.integer.maxPage).toString())
             Log.i("ValueResource", resources.getBoolean(R.bool.isProductionMode).toString())
             Log.i("ValueResource", resources.getColor(R.color.background, theme).toString())
-            resources.getIntArray(R.array.numbers).forEach {
-                Log.i("ValueResource", it.toString())
-            }
+            Log.i("ValueResource", resources.getIntArray(R.array.numbers).joinToString(","))
 
             submitButton.setBackgroundColor(resources.getColor(R.color.background, theme))
-
-
         }
 
         // String Resource
