@@ -1,4 +1,5 @@
 <resources>
+    <string name="latihan_satu">Latihan 1</string>
     <string name="app_name">Belajar Android Dasar</string>
     <string name="button_ok">OK</string>
     <string name="hintText">Ketikan Sesuatu!</string>

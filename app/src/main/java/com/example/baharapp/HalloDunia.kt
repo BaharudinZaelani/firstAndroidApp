@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 
-class MainActivity : AppCompatActivity() {
+class HalloDunia : AppCompatActivity() {
 
     private lateinit var kata: EditText
     private lateinit var submitButton: Button
