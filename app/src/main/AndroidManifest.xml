@@ -6,12 +6,23 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/bahardev"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/bahardev"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BaharApp"
         tools:targetApi="31">
+        <!-- Latihan 2 -->
+        <activity
+            android:name=".IntentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_intent"
+            android:theme="@style/Theme.BaharApp" />
+        <!-- Latihan 1 -->
+        <activity
+            android:name=".HalloDunia"
+            android:label="@string/title_activity_intent"
+            android:theme="@style/Theme.BaharApp" />
         <activity
             android:name=".HomeActivity"
             android:exported="true">
@@ -21,7 +32,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HalloDunia"/>
     </application>
 
 </manifest>

@@ -2,18 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="#fff"
+    tools:context=".HalloDunia"
     android:padding="20dp">
 
     <!-- Welcome card -->
     <LinearLayout
+        android:background="@color/background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:orientation="horizontal"
-        android:padding="22dp"
-        android:background="#eee">
+        android:padding="22dp">
 
         <include layout="@layout/welcome_card"/>
 
@@ -21,11 +23,11 @@
 
     <!-- Form Layout -->
     <LinearLayout
+        android:background="@color/background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="22dp"
-        android:background="#eee">
+        android:padding="22dp">
 
         <include layout="@layout/say_hallo_form"/>
 
@@ -33,12 +35,12 @@
 
     <!-- Result -->
     <LinearLayout
+        android:background="@color/background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="12dp"
-        android:padding="32dp"
-        android:background="#eee">
+        android:padding="32dp">
 
         <include layout="@layout/result_say_hallo"/>
 
