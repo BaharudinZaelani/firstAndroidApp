@@ -3,4 +3,9 @@
     <string name="button_ok">OK</string>
     <string name="hintText">Ketikan Sesuatu!</string>
     <string name="error_text_null">Kata tidak boleh kosong</string>
+    <string name="say_hello">Hallo %1$s</string>
+    <string-array name="names">
+        <item>Baharudin</item>
+        <item>Zaelani</item>
+    </string-array>
 </resources>
