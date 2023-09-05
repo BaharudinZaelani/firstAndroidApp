@@ -37,6 +37,13 @@
             android:layout_marginBottom="11dp"
             android:text="@string/example_dua" />
 
+        <Button
+            android:id="@+id/btnRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:text="@string/recyclerView" />
+
     </LinearLayout>
 
 </LinearLayout>

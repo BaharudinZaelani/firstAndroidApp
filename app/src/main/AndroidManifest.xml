@@ -12,16 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BaharApp"
         tools:targetApi="31">
+        <!-- Latihan 3 -->
+        <activity
+            android:name=".RecycleActivity"
+            android:theme="@style/Theme.BaharApp"/>
         <!-- Latihan 2 -->
         <activity
             android:name=".IntentActivity"
-            android:exported="false"
-            android:label="@string/title_activity_intent"
-            android:theme="@style/Theme.BaharApp" />
+            android:theme="@style/Theme.BaharApp"/>
         <!-- Latihan 1 -->
         <activity
             android:name=".HalloDunia"
-            android:label="@string/title_activity_intent"
             android:theme="@style/Theme.BaharApp" />
         <activity
             android:name=".HomeActivity"
