@@ -39,25 +39,8 @@ class HomeActivity: AppCompatActivity() {
         }
 
         // Move to Fragment Page
-        val supportFragment = supportFragmentManager
-        val homeFragment = HomeFragment()
-        val fragment = supportFragment.findFragmentByTag(HomeFragment::class.java.simpleName)
-
-        val container: LinearLayout = findViewById(R.id.container_fragment)
         btnFragment.setOnClickListener {
-            if ( fragment !is HomeFragment ) {
-                if ( container.childCount == 0 ) {
-                    supportFragment
-                        .beginTransaction()
-                        .add(R.id.container_fragment, homeFragment)
-                        .commit()
-                }else {
-                    supportFragment
-                        .beginTransaction()
-                        .remove(homeFragment)
-                        .commit()
-                }
-            }
+            startActivity(Intent(this@HomeActivity, FragmentPage::class.java))
         }
     }
 

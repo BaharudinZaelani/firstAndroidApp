@@ -109,4 +109,6 @@
     <string name="david_moyes">David Moyes</string>
     <string name="choose">Pilih</string>
     <string name="close">Tutup</string>
+    <string name="title_activity_fragment_main">fragmentMain</string>
+
 </resources>
